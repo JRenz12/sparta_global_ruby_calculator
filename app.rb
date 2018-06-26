@@ -1,16 +1,3 @@
-puts "What type of calculator would you like to use? 1 for basic, 2 for advanced "
-calc_choice = gets.chomp
-
-if calc_choice == "1"
-basic_calculator()
-elsif calc_choice == "2"
-  advanced_calculator()
-else
-  puts "Not an option"
-end
-
-
-
 def basic_calculator
 
 puts "Insert your first nummber: "
@@ -47,4 +34,15 @@ def advanced_calculator
   square_result = gets.to_i
   x = Math.sqrt(square_result)
   puts x
+end
+
+puts "What type of calculator would you like to use? 1 for basic, 2 for advanced "
+calc_choice = gets.chomp
+
+if calc_choice == "1"
+basic_calculator()
+elsif calc_choice == "2"
+  advanced_calculator()
+else
+  puts "Not an option"
 end
